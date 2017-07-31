@@ -12,14 +12,16 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-columns: 150px 120px 120px;
+    width: 1060px;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-        "....... header  header"
-        "sidebar content content"
-        "footer  footer  footer";
+        "header  header  header  header"
+        "sidebar content content content"
+        "footer  footer  footer  footer";
     grid-gap: 10px;
     background-color: #fff;
     color: #444;
+    margin: auto;
 }
 
 .sidebar {
